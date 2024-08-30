@@ -666,24 +666,6 @@
 </head>
 
 <body>
-    <script>
-        let btnMenu = document.querySelector(".btn-abrir-menu");
-        let menu = document.querySelector(".menu-mobile");
-        let overlay = document.querySelector(".overlay-menu");
-
-        btnMenu.addEventListener('click', ()=> {
-            menu.classList.add("abrir-menu");
-        });
-
-        menu.addEventListener('click', ()=> {
-            menu.classList.remove("abrir-menu");
-        });
-        overlay.addEventListener('click', ()=> {
-            menu.classList.remove("abrir-menu");
-        });
-
-
-    </script>
     <header>
        <div class="cabecalho">
             <div class="logo">
@@ -839,6 +821,25 @@
                 </form>
             </div>
         </section>
+
+        <script>
+            let btnMenu = document.querySelector(".btn-abrir-menu");
+            let menu = document.querySelector(".menu-mobile");
+            let overlay = document.querySelector(".overlay-menu");
+    
+            btnMenu.addEventListener('click', ()=> {
+                menu.classList.add("abrir-menu");
+            });
+    
+            menu.addEventListener('click', ()=> {
+                menu.classList.remove("abrir-menu");
+            });
+            overlay.addEventListener('click', ()=> {
+                menu.classList.remove("abrir-menu");
+            });
+    
+    
+        </script>
     </main>
     <footer>
         <div class="interface">
