@@ -714,6 +714,7 @@
                 <div class="btn-whats">
                     <a href="https://wa.me/qr/6LJHTSJ4BZW3E1" target="_blank"><i class="bi bi-whatsapp"></i></a>
                     <p>Peça seu orçamento via whatssap</p>
+                    <p>(51) 99506-8708</p>
                 </div><!--btn-whats-->
             </div>
         </div>
@@ -726,7 +727,7 @@
                         <p>Soluções em desenvolvimento de sitemas web, para seu negócio.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#formulario">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -811,11 +812,16 @@
             <div class="interface">
                 <h2 class="titulo">FALA<span>COMIGO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+                <form action="https://formsubmit.co/willyanpfutze@gmail.com" method="POST">
+
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="text" name="mail" id="mail" placeholder="Seu e-mail:" required>
+                    <input type="text" name="cell" id="cell" placeholder="Seu celular:">
+                    <textarea name="mensagem" id="msg"  placeholder="Sua mensagem"></textarea>
+                    <input type="hidden" name="_next" value="https://willyan-pfutze.github.io/inicial/index.html#">
+                    <input type="hidden" name="_subject" value="CONTATO DO SITE">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
 
                 </form>
@@ -823,10 +829,11 @@
         </section>
 
         <script>
+            /*ABRIR E FECHAR MENU MOBILE*/
             let btnMenu = document.querySelector(".btn-abrir-menu");
             let menu = document.querySelector(".menu-mobile");
             let overlay = document.querySelector(".overlay-menu");
-    
+
             btnMenu.addEventListener('click', ()=> {
                 menu.classList.add("abrir-menu");
             });
@@ -837,9 +844,8 @@
             overlay.addEventListener('click', ()=> {
                 menu.classList.remove("abrir-menu");
             });
-    
-    
         </script>
+
     </main>
     <footer>
         <div class="interface">
